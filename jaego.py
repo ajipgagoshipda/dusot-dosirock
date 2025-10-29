@@ -19,7 +19,7 @@ def load_items(filename):
     
     for line in reader:
         name, num = line
-        item = product(name, num)
+        item = product(name, int(num))
         items.append(item)
 
     print("__ 재고 목록 __")
